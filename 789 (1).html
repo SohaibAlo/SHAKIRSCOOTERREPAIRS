@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHAKIR SCOOTER REPAIRS - Bike and Scooter Mechanic</title>
+  <link rel="stylesheet" href="0002.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    .timing-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    // JavaScript to handle tabbed navigation functionality
+    function openTab(evt, tabName) {
+      var i, contentSections, tabLinks;
+      
+      // Hide all content sections
+      contentSections = document.getElementsByClassName("content-section");
+      for (i = 0; i < contentSections.length; i++) {
+        contentSections[i].style.display = "none";
+      }
+      
+      // Remove "active" class from tab links
+      tabLinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+      }
+      
+      // Show the selected content section and mark the corresponding tab link as active
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="your-logo.png" alt="SHAKIR SCOOTER REPAIRS" class="logo">
+    <h1>SHAKIR SCOOTER REPAIRS</h1>
+    <div class="tabbed-menu">
+      <ul>
+        <li><a href="#" class="tab-link active" onclick="openTab(event, 'home')">Home</a></li>
+        <li><a href="#" class="tab-link" onclick="openTab(event, 'service')">Service</a></li>
+        <li><a href="#" class="tab-link" onclick="openTab(event, 'timing')">Timing</a></li>
+        <li><a href="#" class="tab-link" onclick="openTab(event, 'about')">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="home" class="content-section" style="display: block;">
+    <h2>Welcome to SHAKIR SCOOTER REPAIRS</h2>
+    <p>At SHAKIR SCOOTER REPAIRS, we provide top-notch bike and scooter repair services to ensure your vehicles are in optimal condition. Our highly skilled mechanics are dedicated to delivering exceptional quality workmanship and excellent customer service.</p>
+    <p>Whether you need repairs, diagnostics, regular maintenance, or performance upgrades, we have got you covered. Trust us with your bike or scooter, and we'll have it running smoothly in no time.</p>
+  </div>
+
+  <div id="service" class="content-section">
+    <h2>Our Services</h2>
+    <p>At SHAKIR SCOOTER REPAIRS, we offer a wide range of services, including:</p>
+    <ul>
+     <br><li>Repairs and Diagnostics</li>
+      <br><li>Regular Maintenance</li>
+      <br><li>Tune-ups and Performance Upgrades</li>
+      <br><li>Parts Replacement</li>
+     <br><li>Electrical System Repairs</li>
+     <br> <li>Brake System Repairs</li>
+      <br><li>Suspension Repairs</li>
+     <br> <li>And more...</li>
+    </ul>
+    <br><p>Our skilled technicians are experienced in working with various bike and scooter models, ensuring that your vehicle receives the care and attention it deserves.</p>
+  </div>
+
+  <div id="timing" class="content-section">
+    <h2>Business Hours</h2>
+    <div class="timing-section">
+      <p>We are open:</p><br><br>
+      <p>Monday to Friday: 10:00 AM - 8:00 PM</p><br>
+      <p>Saturday: 10:00 AM - 6:00 PM</p><br>
+      <p>Sunday: Closed</p>
+    </div>
+  </div>
+
+  <div id="about" class="content-section">
+    <h2>About Us</h2>
+    <p>Connect with us on social media:</p>
+    <ul>
+      <li><a href="https://www.instagram.com/shakirscooterrepairs" target="_blank">Instagram</a></li><br><br>
+      <li><a href="https://www.facebook.com/shakirscooterrepairs" target="_blank">Facebook</a></li><br><br>
+      <li><a href="https://www.youtube.com/channel/UCYKLdTVKbzpqiqJbv5cCpmw" target="_blank">YouTube Channel</a></li><br><br>
+    </ul>
+  </div>
+
+  <!-- Rest of your HTML content -->
+
+</body>
+</html>
