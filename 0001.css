@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/* Tabbed Navigation Menu Styles */
+.tabbed-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.tabbed-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tabbed-menu li {
+  margin-right: 10px;
+}
+
+.tabbed-menu li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ddd;
+  text-decoration: none;
+  color: #333;
+}
+
+.tabbed-menu li a:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+/* Styling for the content sections */
+.content-section {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* Custom Styles */
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.content-section p {
+  line-height: 1.5;
+}
+    #home {
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: red;
+      padding: 40px;
+      text-align: center;
+    }
+    #service, #timing, #about {
+      color:blue;
+      padding: 20px;
+    }
+    #service ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    #timing .timing-section {
+      margin-top: 20px;
+    }
+    #about ul {
+      list-style-type: none;
+      margin: 20px 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    #about ul li {
+      margin: 0 10px;
+    }
