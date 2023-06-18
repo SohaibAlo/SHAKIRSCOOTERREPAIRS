@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHAKIR SCOOTER REPAIRS - Bike and Scooter Mechanic</title>
+  <link rel="stylesheet" href="0002.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    .timing-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+// Get the image elements and the navigation buttons
+const images = document.querySelectorAll('#Photos .image-grid img');
+const prevButton = document.querySelector('#Photos .navigation .prev');
+const nextButton = document.querySelector('#photos .navigation .next');
+
+let currentIndex = 0;
+
+// Function to show the current image
+function showImage(index) {
+  // Hide all images
+  images.forEach((image) => {
+    image.style.display = 'none';
+  });
+
+  // Show the current image
+  images[index].style.display = 'block';
+}
+
+// Function to handle next button click
+function nextImage() {
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+  showImage(currentIndex);
+}
+
+// Function to handle previous button click
+function prevImage() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1;
+  }
+  showImage(currentIndex);
+}
+
+// Event listeners for next and previous buttons
+nextButton.addEventListener('click', nextImage);
+prevButton.addEventListener('click', prevImage);
+
+// Show the initial image
+showImage(currentIndex);
+
+
+
+
+
+
+
+    // JavaScript to handle tabbed navigation functionality
+    function openTab(evt, tabName) {
+      var i, contentSections, tabLinks;
+      
+      // Hide all content sections
+      contentSections = document.getElementsByClassName("content-section");
+      for (i = 0; i < contentSections.length; i++) {
+        contentSections[i].style.display = "none";
+      }
+      
+      // Remove "active" class from tab links
+      tabLinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+      }
+      
+      // Show the selected content section and mark the corresponding tab link as active
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\Screenshot_2023-06-18-20-47-05-37_8103d34b31ccde8855577b732f573a6d[279].jpg" alt="SHAKIR SCOOTER REPAIRS" class="logo">
+    <h1>SHAKIR SCOOTER REPAIRS</h1>
+    <div class="tabbed-menu">
+      <ul>
+        <li><a href="#" class="tab-link active" onclick="openTab(event, 'home')">Home</a></li>
+        <li><a href="#" class="tab-link" onclick="openTab(event, 'service')">Service</a></li>
+        <li><a href="#" class="tab-link" onclick="openTab(event, 'timing')">Timing</a></li>
+        <li><a href="#" class="tab-link" onclick="openTab(event, 'about')">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="home" class="content-section" style="display: block;">
+    <h2>Welcome to SHAKIR SCOOTER REPAIRS</h2>
+   <b> <p>At SHAKIR SCOOTER REPAIRS, we provide top-notch bike and scooter repair services to ensure your vehicles are in optimal condition. Our highly skilled mechanics are dedicated to delivering exceptional quality workmanship and excellent customer service.</p>
+   <b> <p>Whether you need repairs, diagnostics, regular maintenance, or performance upgrades, we have got you covered. Trust us with your bike or scooter, and we'll have it running smoothly in no time.</p>
+   <b> <p>We offer comprehensive services for buying, selling, and repairing bikes and scooters. Our expertise extends to both two-wheeled vehicles, ensuring that you receive top-notch assistance throughout the entire process.
+
+When it comes to purchasing your bike or scooter, we provide a convenient and hassle-free experience. <br><br>Our team evaluates your vehicle's condition, considering factors such as mileage, maintenance history, and overall performance.<br><br> We offer fair prices based on market value and negotiate in a transparent manner to ensure your satisfaction.<br><br>
+
+In the realm of selling, we strive to make the process seamless for you.<br> <br>Whether you're looking to upgrade to a new model or no longer require your current bike or scooter, we'll assist you in finding the right buyer.<br><br> Our extensive network and marketing strategies help attract potential customers, ensuring a swift and successful sale.<br><br>
+
+Additionally, we excel in providing professional repair services for bikes and scooters.<br><br> Our skilled technicians possess the expertise to handle a wide range of issues, from routine maintenance to complex repairs. With meticulous attention to detail and the use of high-quality parts, we restore your vehicle's functionality to its optimal state.<br><br>
+
+We prioritize customer satisfaction by employing proper grammar, ensuring clear and concise communication.<br> <br>Our goal is to exceed your expectations in every aspect of our services, from buying and selling to repair. Trust us to be your reliable partner in all your bike and scooter needs.<br><br></p>
+  </div>
+
+  <div id="service" class="content-section">
+    <h2>Our Services</h2>
+    <p>At SHAKIR SCOOTER REPAIRS, we offer a wide range of services, including:</p>
+    <ul>
+    <b> <br><li>Repairs and Diagnostics</li>
+    <b>  <br><li>Regular Maintenance</li>
+    <b>  <br><li>Tune-ups and Performance Upgrades</li>
+    <b>  <br><li>Parts Replacement</li>
+    <b> <br><li>Electrical System Repairs</li>
+    <b> <br> <li>Brake System Repairs</li>
+    <b>  <br><li>Suspension Repairs</li>
+    <b> <br> <li>And more...</li><br>
+
+   <div id="services" class="tabcontent">
+   <h2>Photos</h2>
+  <div class="image-grid">
+    <div class="row">
+      <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\IMG-20230618-WA0001[264].jpg" alt="Image 1">
+      <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\IMG-20230618-WA0002[271].jpg" alt="Image 2">
+      <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\IMG-20230618-WA0003[274].jpg" alt="Image 3">
+    </div></div>
+    <div class="row">
+      <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\IMG-20230618-WA0004[263].jpg" alt="Image 4">
+      <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\IMG-20230618-WA0006[267].jpg" alt="Image 5">
+      <img src="C:\Users\admin\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\Files\S0\4\Attachments\IMG-20230618-WA0015[262].jpg" alt="Image 6">
+    </div>
+    <!-- Add more rows of images here -->
+  </div>
+  
+  <div class="navigation">
+    <span class="prev">&lt;</span><br><br><br>
+    <span class="next">&gt;</span>
+  </div>
+  
+  <div class="comments">
+    <h3>Leave a Review</h3>
+    <form>
+      <input type="text" placeholder="Name" required><br><br>
+      <textarea placeholder="Comment" required></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+    </ul>
+    <br><p>Our skilled technicians are experienced in working with various bike and scooter models, ensuring that your vehicle receives the care and attention it deserves.</p>
+  </div>
+
+  <div id="timing" class="content-section">
+    <h2>Business Hours</h2>
+    <div class="timing-section">
+      <p>We are open:</p><br><br>
+      <p>Monday to Friday: 10:00 AM - 8:00 PM</p><br>
+      <p>Saturday: 10:00 AM - 6:00 PM</p><br>
+      <p>Sunday: Closed</p>
+    </div>
+  </div>
+
+  <div id="about" class="content-section">
+  <b>  <h2>About Us</h2>
+   <b> <p>Connect with us on social media:</p>
+    <ul>
+    <b>  <li><a href="https://instagram.com/shakir.shaikh.374?igshid=MzRlODBiNWFlZA==" target="_blank">Instagram</a></li><br><br>
+    <b> <li><a href="https://www.facebook.com/shakir.shaikh.374?mibextid=ZbWKwL" target="_blank">Facebook</a></li><br><br>
+    <b>  <li><a href="https://www.youtube.com/channel/UCYKLdTVKbzpqiqJbv5cCpmw" target="_blank">YouTube Channel</a></li><br><br>
+    <b>   <h2> THANKS FOR WATCHING MY WEBSITE!</h2><b>
+    </ul>
+  </div>
+
+
+  <!-- Rest of your HTML content -->
+
+</body>
+</html>
